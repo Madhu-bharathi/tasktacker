@@ -1,0 +1,38 @@
+.trash-img {
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+  }
+  
+  .card {
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    width: 300px;
+    height: 100px; /* Fixed height */
+    padding: 5px;
+    margin: 15px 0;
+    display: flex;
+    flex-direction: column;
+    position: relative; /* Needed for absolute positioning of trash-img */
+  }
+  
+  .bottom-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+    padding: 10px;
+    margin: 0;
+    overflow: hidden;
+  }
+  
+  .tag {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px; /* Adjust spacing between tags */
+    overflow: auto; /* Allows scrolling if there are too many tags */
+  }
+  
